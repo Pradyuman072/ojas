@@ -400,7 +400,7 @@ export const seconddata = [
   }, {
        id: 1,
        title: "Utkarsh Gupta",
-       cover: "../images/defaultimg.png",
+       cover: "../images/utkarsh.webp",
        post: "Executive Members",
        handlegit: "https://www.linkedin.com/in/utkarsh-gupta-5aa661261",
        handle: "https://www.linkedin.com/in/utkarsh-gupta-5aa661261",

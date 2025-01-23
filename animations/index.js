@@ -96,7 +96,6 @@ export const preLoaderAnim = () => {
       css: { display: "none" },
     });
 };
-
 export const openMenu = () => {
   const tl = gsap.timeline();
   tl.to("body", {

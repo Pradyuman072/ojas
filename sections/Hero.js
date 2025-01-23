@@ -4,12 +4,25 @@ import AboutUs from "./AboutUs";
 import Tilt from "@/components/Tilt";
 import styled from 'styled-components';
 import FAQSection from "@/components/common/Faq";
-// import EmailSubmissionForm from "@/components/ContactUs";
+import EmailSubmissionForm from "@/sections/ContactUs";
+import Ballpit from "@/components/BallPit";
 
 const Hero = () => {
   return (
     <StyledHero>
+     
+
       <section className='hero'>
+         <div data-aos="zoom-in" className='container items-center text-center'>
+          <Tilt>
+            <h1 className='hero-title '>TEAM OJAS</h1>
+          </Tilt>
+          <div className='sub-heading'>
+            <Tilt>
+              <TitleSm title='Departmental Club of Electrical Engineering' className="title" />
+            </Tilt>
+          </div>
+        </div>
         <div data-aos="zoom-in" className="snow">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
             <g fill="#4b1b88" fillOpacity="0.8" transform="translate(55 42)">
@@ -30,20 +43,13 @@ const Hero = () => {
             </g>
           </svg>
         </div>
-        <div data-aos="zoom-in" className='container items-center text-center'>
-          <Tilt>
-            <h1 className='hero-title '>TEAM OJAS</h1>
-          </Tilt>
-          <div className='sub-heading'>
-            <Tilt>
-              <TitleSm title='Departmental Club of Electrical Engineering' className="title" />
-            </Tilt>
-          </div>
-        </div>
+    
+   
       </section>
-	  <FAQSection/>
-                {/* <EmailSubmissionForm/> */}
-      <AboutUs />
+	    <AboutUs />
+       {/* <FAQSection/> */}
+                <EmailSubmissionForm/>
+
     </StyledHero>
   );
 }

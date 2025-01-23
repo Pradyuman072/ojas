@@ -44,67 +44,66 @@ const FaqCard = ({ number, question, answer }) => {
 
     return (
         <div 
-            className={`
-                bg-gradient-to-r from-purple-600 to-purple-700 
-                rounded-lg 
-                shadow-lg 
-                mb-4 
-                overflow-hidden 
-                transition-all 
-                duration-300 
-                ease-in-out
-            `}
+            style={{
+                background: 'linear-gradient(to right, #9333ea, #7e22ce)',
+                borderRadius: '0.5rem',
+                boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                marginBottom: '1rem',
+                overflow: 'hidden',
+                transition: 'all 0.3s ease-in-out'
+            }}
         >
             <div 
-                className="
-                    flex 
-                    justify-between 
-                    items-center 
-                    p-4 
-                    cursor-pointer 
-                    hover:bg-purple-800 
-                    transition 
-                    duration-200
-                "
+                style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding: '1rem',
+                    cursor: 'pointer',
+                    transition: 'background-color 0.2s',
+                    ':hover': {
+                        backgroundColor: '#7e22ce'
+                    }
+                }}
                 onClick={toggleExpand}
                 role="button"
                 aria-expanded={isExpanded}
             >
-                <div className="flex items-center space-x-4">
-                    <span className="
-                        bg-white 
-                        text-purple-700 
-                        rounded-full 
-                        w-10 
-                        h-10 
-                        flex 
-                        items-center 
-                        justify-center 
-                        font-bold
-                    ">
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <span 
+                        style={{
+                            backgroundColor: 'white',
+                            color: '#7e22ce',
+                            borderRadius: '9999px',
+                            width: '2.5rem',
+                            height: '2.5rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontWeight: 'bold'
+                        }}
+                    >
                         {number}
                     </span>
-                    <h3 className="text-white text-lg font-semibold">{question}</h3>
+                    <h3 style={{ color: 'white', fontSize: '1.125rem', fontWeight: '600' }}>{question}</h3>
                 </div>
                 {isExpanded ? (
-                    <ChevronUpIcon className="text-white w-6 h-6" />
+                    <ChevronUpIcon style={{ color: 'white', width: '1.5rem', height: '1.5rem' }} />
                 ) : (
-                    <ChevronDownIcon className="text-white w-6 h-6" />
+                    <ChevronDownIcon style={{ color: 'white', width: '1.5rem', height: '1.5rem' }} />
                 )}
             </div>
 
             {isExpanded && (
                 <div 
-                    className="
-                        px-4 
-                        pb-4 
-                        text-white 
-                        bg-purple-800 
-                        bg-opacity-50
-                    "
+                    style={{
+                        padding: '1rem 1rem 1rem 1rem',
+                        color: 'white',
+                        backgroundColor: 'rgba(126, 34, 206, 0.5)'
+                    }}
                     aria-labelledby="faq-content"
                 >
-                    <p className="text-white/90">{answer}</p>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>{answer}</p>
                 </div>
             )}
         </div>
@@ -131,22 +130,34 @@ const FAQSection = () => {
         {
             number: "04",
             question: "How can I contact Ojas?",
-            answer: "You can reach us via email at ojas.nit@nith.ac.in or follow us on Instagram @ojas_nit."
+            answer: "You can reach us via email at ojas.nimbus@nith.ac.in or follow us on Instagram @team_ojas_nith."
         }
     ];
 
     return (
-        <section className="max-w-4xl mx-auto px-4 py-12">
-            <div className="bg-gradient-to-r from-purple-500 to-purple-700 rounded-xl shadow-2xl p-6 md:p-10">
-                <h2 className="
-                    text-3xl 
-                    md:text-4xl 
-                    text-center 
-                    text-white 
-                    font-bold 
-                    mb-8 
-                    tracking-tight
-                ">
+        <section style={{ 
+            maxWidth: '56rem', 
+            margin: '0 auto', 
+            padding: '3rem 1rem' 
+        }}>
+            <div 
+                style={{
+                    background: 'linear-gradient(to right, #a855f7, #7e22ce)',
+                    borderRadius: '0.75rem',
+                    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                    padding: '1.5rem'
+                }}
+            >
+                <h2 
+                    style={{
+                        fontSize: '2.25rem',
+                        textAlign: 'center',
+                        color: 'white',
+                        fontWeight: 'bold',
+                        marginBottom: '2rem',
+                        letterSpacing: '-0.025em'
+                    }}
+                >
                     Frequently Asked Questions
                 </h2>
                 {faqData.map((faq) => (
