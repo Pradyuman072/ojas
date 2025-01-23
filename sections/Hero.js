@@ -3,9 +3,8 @@ import React from "react";
 import AboutUs from "./AboutUs";
 import Tilt from "@/components/Tilt";
 import styled from 'styled-components';
-import FAQSection from "@/components/common/Faq";
 import EmailSubmissionForm from "@/sections/ContactUs";
-import Ballpit from "@/components/BallPit";
+
 
 const Hero = () => {
   return (
