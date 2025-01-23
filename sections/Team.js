@@ -9,7 +9,7 @@ const Team = () => {
       <section className='agency bg-top'>
         <div className='container'>
           <div data-aos='zoom-in' data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='heading-title'>
-            <TitleSm title='MEET OUR TEAM' />
+            <Title className="text-6xl" title='MEET OUR TEAM' />
           </div>
           
           <div  data-aos='zoom-in' data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='heading-title'>

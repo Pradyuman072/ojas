@@ -33,6 +33,12 @@ export const event = [
     cover: "../images/ojasday.jpg",
     desc: [],
   },
+  {
+    id:3,
+    title:"Arduino Workshop",
+    cover:"../images/aurdino.jpg",
+    desc:[]
+  }
 
 ]
 

@@ -4,6 +4,7 @@ import AboutUs from "./AboutUs";
 import Tilt from "@/components/Tilt";
 import styled from 'styled-components';
 import FAQSection from "@/components/common/Faq";
+// import EmailSubmissionForm from "@/components/ContactUs";
 
 const Hero = () => {
   return (
@@ -41,6 +42,7 @@ const Hero = () => {
         </div>
       </section>
 	  <FAQSection/>
+                {/* <EmailSubmissionForm/> */}
       <AboutUs />
     </StyledHero>
   );

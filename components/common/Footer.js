@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <StyledFooter>
-      <div className='container'>
+      <div className='container flex'>
         <div className='grid'>
           <div className='logo'>
             <TitleLogo title='OJAS' className='logobg' />

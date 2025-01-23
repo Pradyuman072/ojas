@@ -2,6 +2,7 @@ import { ccdata } from "@/assets/data/dummydata";
 import { Title, TitleSm } from "@/components/common/Title";
 import Link from "next/link";
 import React from "react";
+import { AiFillLinkedin } from "react-icons/ai";
 import styled from 'styled-components';
 
 const ShowCase = () => {
@@ -29,7 +30,8 @@ const ShowCase = () => {
                     <div className="backSide">
                       <p className="title">Contact</p>
                       <Link href={coordinator.handlegit} target="_blank">
-                        <p>Linkedin</p>
+                       <AiFillLinkedin size={40} />
+                       
                       </Link>
                     </div>
                   </div>

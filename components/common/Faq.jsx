@@ -1,31 +1,110 @@
 import React, { useState } from 'react';
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/solid'; // Importing icons from Heroicons
+
+// Custom Chevron Icons
+const ChevronDownIcon = ({ className }) => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor" 
+        className={className}
+    >
+        <path 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            strokeWidth={2} 
+            d="M19 9l-7 7-7-7" 
+        />
+    </svg>
+);
+
+const ChevronUpIcon = ({ className }) => (
+    <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor" 
+        className={className}
+    >
+        <path 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            strokeWidth={2} 
+            d="M5 15l7-7 7 7" 
+        />
+    </svg>
+);
 
 const FaqCard = ({ number, question, answer }) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
+    const toggleExpand = () => {
+        setIsExpanded(!isExpanded);
+    };
+
     return (
-        <div className={`bg-purple-600 rounded-lg shadow-md p-4 mb-6 transition-all duration-300 ${isExpanded ? 'bg-purple-700' : ''}`}>
-            <div className="flex justify-between items-center cursor-pointer" onClick={() => setIsExpanded(!isExpanded)}>
-                <div className="flex items-center">
-                    <span className="font-bold text-white text-2xl mr-4">{number}</span>
-                    <h2 className="text-white text-lg">{question}</h2>
+        <div 
+            className={`
+                bg-gradient-to-r from-purple-600 to-purple-700 
+                rounded-lg 
+                shadow-lg 
+                mb-4 
+                overflow-hidden 
+                transition-all 
+                duration-300 
+                ease-in-out
+            `}
+        >
+            <div 
+                className="
+                    flex 
+                    justify-between 
+                    items-center 
+                    p-4 
+                    cursor-pointer 
+                    hover:bg-purple-800 
+                    transition 
+                    duration-200
+                "
+                onClick={toggleExpand}
+                role="button"
+                aria-expanded={isExpanded}
+            >
+                <div className="flex items-center space-x-4">
+                    <span className="
+                        bg-white 
+                        text-purple-700 
+                        rounded-full 
+                        w-10 
+                        h-10 
+                        flex 
+                        items-center 
+                        justify-center 
+                        font-bold
+                    ">
+                        {number}
+                    </span>
+                    <h3 className="text-white text-lg font-semibold">{question}</h3>
                 </div>
-                <button
-                    className="text-white focus:outline-none"
-                    aria-expanded={isExpanded}
-                    aria-controls="faq-content"
-                >
-                    {isExpanded ? (
-                        <ChevronUpIcon className="h-6 w-6" />
-                    ) : (
-                        <ChevronDownIcon className="h-6 w-6" />
-                    )}
-                </button>
+                {isExpanded ? (
+                    <ChevronUpIcon className="text-white w-6 h-6" />
+                ) : (
+                    <ChevronDownIcon className="text-white w-6 h-6" />
+                )}
             </div>
+
             {isExpanded && (
-                <div id="faq-content" className="mt-4 text-white">
-                    <p>{answer}</p>
+                <div 
+                    className="
+                        px-4 
+                        pb-4 
+                        text-white 
+                        bg-purple-800 
+                        bg-opacity-50
+                    "
+                    aria-labelledby="faq-content"
+                >
+                    <p className="text-white/90">{answer}</p>
                 </div>
             )}
         </div>
@@ -52,20 +131,24 @@ const FAQSection = () => {
         {
             number: "04",
             question: "How can I contact Ojas?",
-            answer: (
-                <>
-                    You can contact us via Email at <a href="mailto:ojas.nit@nith.ac.in" className="text-blue-300 underline" target="_blank" rel="noopener noreferrer">Clicking Here</a> or follow us on our Instagram page <a href="https://www.instagram.com/ojas_nit" className="text-blue-300 underline" target="_blank" rel="noopener noreferrer">Clicking Here</a>.
-                </>
-            )
+            answer: "You can reach us via email at ojas.nit@nith.ac.in or follow us on Instagram @ojas_nit."
         }
     ];
 
     return (
-        <div className="container mx-auto p-6 mt-10">
-            <div className="bg-gradient-to-r from-purple-500 to-purple-700 p-8 rounded-lg shadow-lg">
-                <div className='text-center mb-6'>
-                    <h2 className="text-3xl text-white font-bold">Frequently Asked Questions</h2>
-                </div>
+        <section className="max-w-4xl mx-auto px-4 py-12">
+            <div className="bg-gradient-to-r from-purple-500 to-purple-700 rounded-xl shadow-2xl p-6 md:p-10">
+                <h2 className="
+                    text-3xl 
+                    md:text-4xl 
+                    text-center 
+                    text-white 
+                    font-bold 
+                    mb-8 
+                    tracking-tight
+                ">
+                    Frequently Asked Questions
+                </h2>
                 {faqData.map((faq) => (
                     <FaqCard
                         key={faq.number}
@@ -75,7 +158,7 @@ const FAQSection = () => {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 
