@@ -1,0 +1,15 @@
+$indigo: #8f4d2b;
+$white: #f6ecec;
+$dark: #0a0433;
+$green: #6db99f;
+$gradient: linear-gradient(203deg, rgb(117, 30, 172) 0%, rgba(67, 39, 158, 1) 100%);
+$gradient2: linear-gradient(250deg, rgb(125, 226, 88) 24%, rgba(52, 108, 255, 1) 100%);
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+.green {
+  color: $green;
+}
+.indigo {
+  color: $indigo;
+}
