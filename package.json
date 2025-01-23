@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "aos": "^2.3.4",
     "gsap": "^3.12.5",
     "icons": "^1.0.0",

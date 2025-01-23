@@ -46,7 +46,10 @@ function ContentWithLoader({ propsLoaded, Component, pageProps }) {
       {propsLoaded ? (
         <Component {...pageProps} />
       ) : (
-        <Preloader />
+        <div>
+           <Preloader />
+        </div>
+       
       )}
     </>
   );

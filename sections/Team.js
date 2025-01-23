@@ -5,7 +5,7 @@ import React from "react"
 
 const Team = () => {
   return (
-    <>
+   <>
       <section className='agency bg-top'>
         <div className='container'>
           <div data-aos='zoom-in' data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='heading-title'>
@@ -15,7 +15,7 @@ const Team = () => {
           <div  data-aos='zoom-in' data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='heading-title'>
             <Title title='Final Year' className='title-bg' />
           </div>
-
+          
           <div  className='grid-4 py'>
             {finaldata.map((item) => (
               <Card data={item} key={item.id} caption={item.post} />

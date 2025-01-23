@@ -7,34 +7,34 @@ import styled from 'styled-components';
 export const Card = ({ data, caption, show }) => {
   return (
     <StyledCard data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-      <div className='card-img'>
-        <Tilt options={{ max: 15, speed: 400 }}>
+      <Tilt options={{ max: 15, speed: 400 }}>
+        <div className='card-img'>
           <img className="team-card" src={data.cover} alt={data.title} loading="lazy" />
-        </Tilt>
-      </div>
-      <div className='card-details'>
-        <Link href={`${data.handle}`} className='title-link' target="_blank">
-          <TitleSm title={data.title} />
-        </Link>
-
-        {caption && (
-          <Link href={`${data.handlegit}`} target="_blank">
-            {caption} <HiOutlineArrowRight className='link-icon' />
-          </Link>
-        )}
-
-        <div className='flex'>
-          <span>{data.catgeory}</span> {data.date && <span> / {data.date}</span>}
         </div>
+        <div className='card-details'>
+          <Link href={`${data.handle}`} className='title-link' target="_blank">
+            <TitleSm title={data.title} />
+          </Link>
 
-        {show && (
-          <ul>
-            {data.desc.map((text, i) => (
-              <li key={i}> - {text.text} </li>
-            ))}
-          </ul>
-        )}
-      </div>
+          {caption && (
+            <Link href={`${data.handlegit}`} target="_blank">
+              {caption} <HiOutlineArrowRight className='link-icon' />
+            </Link>
+          )}
+
+          <div className='flex'>
+            <span>{data.catgeory}</span> {data.date && <span> / {data.date}</span>}
+          </div>
+
+          {show && (
+            <ul>
+              {data.desc.map((text, i) => (
+                <li key={i}> - {text.text} </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </Tilt>
     </StyledCard>
   );
 }
@@ -68,12 +68,12 @@ const StyledCard = styled.div`
 
   .card-details {
     padding: 1rem;
-    background: linear-gradient(135deg, rgba(0, 0, 128, 0.9), rgba(0, 0, 64, 0.9)); /* Dark blue gradient */
+    background: linear-gradient(135deg, rgba(0, 128, 255, 0.9), rgba(255, 0, 128, 0.9)); /* Gradient from blue to pink */
     border-radius: 0 0 1rem 1rem;
     transition: background 0.3s ease;
 
     &:hover {
-      background: linear-gradient(135deg, rgba(0, 0, 128, 1), rgba(0, 0, 64, 1)); /* Darker gradient on hover */
+      background: linear-gradient(135deg, rgba(0, 128, 255, 1), rgba(255, 0, 128, 1)); /* Darker gradient on hover */
     }
   }
 
