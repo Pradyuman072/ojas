@@ -16,10 +16,10 @@ export default function App({ Component, pageProps }) {
       duration: 8000
     });
 
-    // Simulate props loading delay
+
     setTimeout(() => {
       setPropsLoaded(true);
-    }, 4000); // Adjust the delay time as needed
+    }, 4110); 
   }, []);
 
   return (

@@ -406,6 +406,165 @@ export const seconddata = [
        handle: "https://www.linkedin.com/in/utkarsh-gupta-5aa661261",
      },
 ],
-firstdata=[{
-
-}]
+firstdata=[
+  {
+      "id": 1,
+      "title": "Vaibhav Sharma",
+      "cover": "../images/vaibhav_sharma.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/vaibhav-sharma-78b738323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/Gittyvaibhav"
+  },
+  {
+      "id": 2,
+      "title": "Aryan Dhaka",
+      "cover": "../images/aryan_dhaka.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/aryan-dhaka-20635b324",
+      "handle": "https://github.com/aryandhaka07"
+  },
+  {
+      "id": 3,
+      "title": "Ritish Kumar",
+      "cover": "../images/ritish_kumar.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/ritish-kumar-30b131325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/rk-ritish"
+  },
+  {
+      "id": 4,
+      "title": "Ronak Dotasara",
+      "cover": "../images/ronak_dotasara.webp",
+      "post": "volunteer",
+      "handlegit": "Ronak Dotasara - India | Professional Profile | LinkedIn",
+      "handle": "https://github.com/ronakdotasara"
+  },
+  {
+      "id": 5,
+      "title": "Pankaj",
+      "cover": "../images/pankaj.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/pankaj-033785316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/Pankaj-171016"
+  },
+  {
+      "id": 6,
+      "title": "Gourav",
+      "cover": "../images/gourav.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/gourav-gourav-49b204348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "ikki00112"
+  },
+  {
+      "id": 7,
+      "title": "Ajay Suryawanshi",
+      "cover": "../images/ajay_suryawanshi.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/ajay-suryawanshi-320b26347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/ajay20022006"
+  },
+  {
+      "id": 8,
+      "title": "Piyush Kumar",
+      "cover": "../images/piyush_kumar.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/piyush-kumar-3b1b21338?utm_source=share&utm_campaign=s",
+      "handle": "https://github.com/Piyush2006K"
+  },
+  {
+      "id": 9,
+      "title": "Shivansh Gupta",
+      "cover": "../images/shivansh_gupta.webp",
+      "post": "volunteer",
+      "handlegit": "Shivansh Gupta - Hamirpur, Himachal Pradesh, India | Professional Profile | LinkedIn",
+      "handle": "https://github.com/shiv1004"
+  },
+  {
+      "id": 10,
+      "title": "Pallavi Vijay",
+      "cover": "../images/pallavi_vijay.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/pallavi-vijay-5bb82a348/",
+      "handle": "https://github.com/Pallavi-Vijay"
+  },
+  {
+      "id": 11,
+      "title": "Tanuj",
+      "cover": "../images/tanuj.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/tanuj-verma-5a8ba0347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/Tanuj-v14"
+  },
+  {
+      "id": 12,
+      "title": "Priti",
+      "cover": "../images/priti.webp",
+      "post": "volunteer",
+      "handlegit": "devenderdevender51003@gmail.com",
+      "handle": "py2280512@gmail.com"
+  },
+  {
+      "id": 13,
+      "title": "Shailja",
+      "cover": "../images/shailja.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/shailja-choudhary-999910348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/shailja1533"
+  },
+  {
+      "id": 14,
+      "title": "Ivan Sharma",
+      "cover": "../images/ivan_sharma.webp",
+      "post": "volunteer",
+      "handlegit": "www.linkedin.com/in/ivan-sharma-86a51218b",
+      "handle": "ivansharmaa"
+  },
+  {
+      "id": 15,
+      "title": "Nitin Koundal",
+      "cover": "../images/nitin_koundal.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/nitin-koundal-a65b92293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/Nitinkoundall"
+  },
+  {
+      "id": 16,
+      "title": "Vaibhav Kumar",
+      "cover": "../images/vaibhav_kumar.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/vaibhav-kumar-196301348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/VaibhavKumar1812"
+  },
+  {
+      "id": 17,
+      "title": "Riya Choudhary",
+      "cover": "../images/riya_choudhary.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/riya-choudhary-0882a230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/riyachoudhary06"
+  },
+  {
+      "id": 18,
+      "title": "Arushi Prajapati",
+      "cover": "../images/arushi_prajapati.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/arushi-prajapati-27a11433a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "NA"
+  },
+  {
+      "id": 19,
+      "title": "Akshit Vardhan",
+      "cover": "../images/akshit_vardhan.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/akshit-vardhan-6b290a324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "handle": "https://github.com/akshitvardhan"
+  },
+  {
+      "id": 20,
+      "title": "Arohi Sharma",
+      "cover": "../images/arohi_sharma.webp",
+      "post": "volunteer",
+      "handlegit": "https://www.linkedin.com/in/arohi-sharma-82bb5a323",
+      "handle": "https://github.com/ArohiSharma15"
+  }
+]

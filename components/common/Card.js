@@ -3,6 +3,7 @@ import { TitleSm } from "./Title";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import Tilt from "../Tilt";
 import styled from 'styled-components';
+import { AiFillLinkedin } from "react-icons/ai";
 
 export const Card = ({ data, caption, show }) => {
   return (
@@ -11,14 +12,14 @@ export const Card = ({ data, caption, show }) => {
         <div className='card-img'>
           <img className="team-card" src={data.cover} alt={data.title} loading="lazy" />
         </div>
-        <div className='card-details'>
-          <Link href={`${data.handle}`} className='title-link' target="_blank">
+        <div className='card-details  '>
+        <Link href={`${data.handle}`} className='title-link' target="_blank">
             <TitleSm title={data.title} />
-          </Link>
+         </Link>
 
           {caption && (
-            <Link href={`${data.handlegit}`} target="_blank">
-              {caption} <HiOutlineArrowRight className='link-icon' />
+            <Link href={`${data.handlegit}`} target="_blank" className="flex items-center">
+             {caption}
             </Link>
           )}
 

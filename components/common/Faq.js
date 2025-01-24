@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 // Custom Chevron Icons
 const ChevronDownIcon = ({ className }) => (
@@ -46,12 +48,13 @@ const FaqCard = ({ number, question, answer }) => {
         <div 
             style={{
                 background: 'linear-gradient(to right, #9333ea, #7e22ce)',
-                borderRadius: '0.5rem',
+                borderRadius: '0.75rem', // Updated for rounded edges
                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
                 marginBottom: '1rem',
                 overflow: 'hidden',
-                transition: 'all 0.3s ease-in-out'
+                transition: 'all 0.3s ease-in-out',
             }}
+            data-aos="fade-up" // Add AOS attribute here
         >
             <div 
                 style={{
@@ -61,9 +64,6 @@ const FaqCard = ({ number, question, answer }) => {
                     padding: '1rem',
                     cursor: 'pointer',
                     transition: 'background-color 0.2s',
-                    ':hover': {
-                        backgroundColor: '#7e22ce'
-                    }
                 }}
                 onClick={toggleExpand}
                 role="button"
@@ -97,7 +97,7 @@ const FaqCard = ({ number, question, answer }) => {
             {isExpanded && (
                 <div 
                     style={{
-                        padding: '1rem 1rem 1rem 1rem',
+                        padding: '1rem',
                         color: 'white',
                         backgroundColor: 'rgba(126, 34, 206, 0.5)'
                     }}
@@ -111,6 +111,13 @@ const FaqCard = ({ number, question, answer }) => {
 };
 
 const FAQSection = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: false, // Whether animation should happen only once
+        });
+    }, []);
+
     const faqData = [
         {
             number: "01",
@@ -142,11 +149,15 @@ const FAQSection = () => {
         }}>
             <div 
                 style={{
-                    background: 'linear-gradient(to right, #a855f7, #7e22ce)',
+                    width: '100%',
+                    background: 'linear-gradient(270deg, #9b59b6, #8e44ad, #6a5acd, #4b0082)',
+                    backgroundSize: '400% 400%',
+                    animation: 'gradientAnimation 15s ease infinite', // Add animation for gradient
                     borderRadius: '0.75rem',
                     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
                     padding: '1.5rem'
                 }}
+                data-aos="fade-up" // Add AOS attribute here for the entire section
             >
                 <h2 
                     style={{
@@ -169,6 +180,15 @@ const FAQSection = () => {
                     />
                 ))}
             </div>
+            <style>
+                {`
+                    @keyframes gradientAnimation {
+                        0% { background-position: 0% 50%; }
+                        50% { background-position: 100% 50%; }
+                        100% { background-position: 0% 50%; }
+                    }
+                `}
+            </style>
         </section>
     );
 };

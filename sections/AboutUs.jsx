@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import { ccdata } from "@/assets/data/dummydata";
 import { Title, TitleSm } from "@/components/common/Title";
 import Link from "next/link";
@@ -6,6 +9,13 @@ import { AiFillLinkedin } from "react-icons/ai";
 import styled from 'styled-components';
 
 const ShowCase = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: false, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <>
       <section className='showcase bg-top'>
@@ -20,7 +30,7 @@ const ShowCase = () => {
           {/* about us */}
           <div className='cc-card'>
             {ccdata.map((coordinator) => (
-              <StyledWrapper key={coordinator.id}>
+              <StyledWrapper key={coordinator.id} data-aos="fade-up"> {/* Add AOS attribute here */}
                 <div className="myCard">
                   <div className="innerCard">
                     <div className="frontSide">
@@ -31,7 +41,6 @@ const ShowCase = () => {
                       <p className="title">Contact</p>
                       <Link href={coordinator.handlegit} target="_blank">
                        <AiFillLinkedin size={40} />
-                       
                       </Link>
                     </div>
                   </div>

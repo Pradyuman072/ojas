@@ -1,7 +1,9 @@
 import { showcase } from "@/assets/data/dummydata"
 import { Card } from "@/components/common/Card"
+import FAQSection from "@/components/common/Faq"
 import { Title, TitleSm } from "@/components/common/Title"
 import React from "react"
+import { ShowCaseCard } from "./ShowCaseCard"
 
 const ShowCase = () => {
   return (
@@ -17,11 +19,12 @@ const ShowCase = () => {
           <br />
           <div className='grid-3'>
             {showcase.map((item) => (
-              <Card data={item} key={item.id} />
+              <ShowCaseCard data={item} key={item.id} />
             ))}
           </div>
         </div>
       </section>
+            <FAQSection/>
     </>
   )
 }
