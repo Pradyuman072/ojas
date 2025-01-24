@@ -87,11 +87,6 @@ const FaqCard = ({ number, question, answer }) => {
                     </span>
                     <h3 style={{ color: 'white', fontSize: '1.125rem', fontWeight: '600' }}>{question}</h3>
                 </div>
-                {isExpanded ? (
-                    <ChevronUpIcon style={{ color: 'white', width: '1.5rem', height: '1.5rem' }} />
-                ) : (
-                    <ChevronDownIcon style={{ color: 'white', width: '1.5rem', height: '1.5rem' }} />
-                )}
             </div>
 
             {isExpanded && (
