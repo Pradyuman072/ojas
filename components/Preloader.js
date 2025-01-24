@@ -1,206 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 
 const Preloader = () => {
-  const [loading, setLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
+  const [loading, setLoading] = useState(true)
+  const [progress, setProgress] = useState(0)
 
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prevProgress) => {
         if (prevProgress >= 100) {
-          clearInterval(timer);
-          setLoading(false);
-          return 100;
+          clearInterval(timer)
+          setTimeout(() => setLoading(false), 500)
+          return 100
         }
-        return prevProgress + 2.5;
-      });
-    }, 100);
+        return prevProgress + 2.5
+      })
+    }, 100)
 
-    return () => clearInterval(timer);
-  }, []);
+    return () => clearInterval(timer)
+  }, [])
 
-  if (!loading) return null;
+  if (!loading) return null
 
   return (
+    
     <div className="preloader">
-      <div className="container">
-        <div className="bubble">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-       
-        <div className="bubble">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>  <h1 className="title">TEAM OJAS</h1>
+      
+      <h1 className="title">TEAM OJAS</h1>
       <div className="loading-bar">
         <div className="loading-progress" style={{ width: `${progress}%` }} />
       </div>
-        <div className="bubble">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>   
-       
       <div className="particles">
         {[...Array(20)].map((_, index) => (
           <div key={index} className="particle" />
         ))}
       </div>
-        <div className="bubble">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className="bubble">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-   
       <style jsx>{`
-     
-  .bubble {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
-    animation: animate_4010 8s ease-in-out infinite;
-  }
-
-  .bubble:nth-child(2) {
-    position: relative;
-    zoom: 0.45;
-    left: -30px; /* Adjusted */
-    top: -120px; /* Adjusted */
-    animation-delay: -4s;
-  }
-
-  .bubble:nth-child(3) {
-    position: relative;
-    zoom: 0.45;
-    right: -60px; /* Adjusted */
-    top: -280px; /* Adjusted */
-    animation-delay: -6s;
-  }
-
-  .bubble:nth-child(4) {
-    position: relative;
-    zoom: 0.35;
-    left: -100px; /* Adjusted */
-    bottom: -180px; /* Adjusted */
-    animation-delay: -3s;
-  }
-
-  .bubble:nth-child(5) {
-    position: relative;
-    zoom: 0.5;
-    left: 20px; /* Adjusted */
-    top: 220px; /* Adjusted */
-    animation-delay: -5s;
-  }
-
-  @keyframes animate_4010 {
-    0%, 100% {
-      transform: translateY(-20px);
-    }
-
-    50% {
-      transform: translateY(20px);
-    }
-  }
-
-
-        @keyframes animate_4010 {
-          0%, 100% {
-            transform: translateY(-20px);
-          }
-
-          50% {
-            transform: translateY(20px);
-          }
-        }
-
-        .bubble::before {
-          content: '';
-          position: absolute;
-          top: 50px;
-          left: 45px;
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: #fff;
-          z-index: 10;
-          filter: blur(2px);
-        }
-
-        .bubble::after {
-          content: '';
-          position: absolute;
-          top: 80px;
-          left: 80px;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          background: #fff;
-          z-index: 10;
-          filter: blur(2px);
-        }
-
-        .bubble span {
-          position: absolute;
-          border-radius: 50%;
-        }
-
-        .bubble span:nth-child(1) {
-          inset: 10px;
-          border-left: 15px solid #0fb4ff;
-          filter: blur(8px);
-        }
-
-        .bubble span:nth-child(2) {
-          inset: 10px;
-          border-right: 15px solid #ff4484;
-          filter: blur(8px);
-        }
-
-        .bubble span:nth-child(3) {
-          inset: 10px;
-          border-top: 15px solid #ffeb3b;
-          filter: blur(8px);
-        }
-
-        .bubble span:nth-child(4) {
-          inset: 30px;
-          border-left: 15px solid #ff4484;
-          filter: blur(12px);
-        }
-
-        .bubble span:nth-child(5) {
-          inset: 10px;
-          border-bottom: 10px solid #fff;
-          filter: blur(8px);
-          transform: rotate(330deg);
-        }
-
         .preloader {
           height: 100vh;
           width: 100vw;
-          
+          background: #000000;
           position: fixed;
           top: 0;
           left: 0;
@@ -218,7 +56,7 @@ const Preloader = () => {
             background: #000000;
           }
           50% {
-            background: #220430;
+            background: #1a1a1a;
           }
           100% {
             background: #000000;
@@ -390,7 +228,7 @@ const Preloader = () => {
         }
       `}</style>
     </div>
-  );
-};
+  )
+}
 
-export default Preloader;
+export default Preloader
