@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
 
     setTimeout(() => {
       setPropsLoaded(true);
-    }, 4500); 
+    }, 1500); 
   }, []);
 
   return (

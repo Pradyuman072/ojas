@@ -45,9 +45,12 @@ const Hero = () => {
     
    
       </section>
-	    <AboutUs />
+      <div className="bghero"><AboutUs />
        {/* <FAQSection/> */}
                 <EmailSubmissionForm/>
+
+      </div>
+	    
 
     </StyledHero>
   );
@@ -59,7 +62,6 @@ const StyledHero = styled.div`
     overflow: hidden;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/path/to/your/background-image.jpg') no-repeat center center/cover;
     color: #ffffff;
-    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */

@@ -47,7 +47,7 @@ const FaqCard = ({ number, question, answer }) => {
     return (
         <div 
             style={{
-                background: 'linear-gradient(to right, #9333ea, #7e22ce)',
+                background: 'linear-gradient(to right, #9333ce, #7e22de)',
                 borderRadius: '0.75rem', // Updated for rounded edges
                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
                 marginBottom: '1rem',
