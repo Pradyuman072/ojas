@@ -5,6 +5,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import NextProgress from "nextjs-progressbar";
 import Preloader from "@/components/Preloader.js";
+import Image from "next/image";
+import { Title } from "@/components/common/Title";
 
 export default function App({ Component, pageProps }) {
   const [propsLoaded, setPropsLoaded] = useState(false);
@@ -19,7 +21,7 @@ export default function App({ Component, pageProps }) {
 
     setTimeout(() => {
       setPropsLoaded(true);
-    }, 1500); 
+    }, 3000); 
   }, []);
 
   return (
@@ -46,9 +48,8 @@ function ContentWithLoader({ propsLoaded, Component, pageProps }) {
       {propsLoaded ? (
         <Component {...pageProps} />
       ) : (
-        <div>
-           <Preloader />
-        </div>
+       <Preloader/>
+        
        
       )}
     </>

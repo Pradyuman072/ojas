@@ -5,7 +5,7 @@ import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icon
 
 const Footer = () => {
   return (
-    <>
+    <div className="footer">
       <footer>
         <div className='container'>
           <div className='grid-3'>
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
 

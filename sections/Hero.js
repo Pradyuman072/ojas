@@ -4,21 +4,22 @@ import AboutUs from "./AboutUs";
 import Tilt from "@/components/Tilt";
 import styled from 'styled-components';
 import EmailSubmissionForm from "@/sections/ContactUs";
+import FAQSection from "@/components/common/Faq";
 
 
 const Hero = () => {
   return (
-    <StyledHero>
+    <StyledHero className="circuit-background">
      
 
-      <section className='hero'>
+      <section className='hero  '>
          <div data-aos="zoom-in" className='container items-center text-center'>
           <Tilt>
             <h1 className='hero-title '>TEAM OJAS</h1>
           </Tilt>
           <div className='sub-heading'>
             <Tilt>
-              <TitleSm title='Departmental Club of Electrical Engineering' className="title" />
+              <TitleSm title='Departmental Team of Electrical Engineering' className="title" />
             </Tilt>
           </div>
         </div>
@@ -45,10 +46,10 @@ const Hero = () => {
     
    
       </section>
-      <div className="bghero"><AboutUs />
+      <div ><AboutUs />
        {/* <FAQSection/> */}
                 <EmailSubmissionForm/>
-
+                <FAQSection/>
       </div>
 	    
 

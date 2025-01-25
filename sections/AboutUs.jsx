@@ -17,8 +17,8 @@ const ShowCase = () => {
   }, []);
 
   return (
-    <>
-      <section className='showcase bg-top'>
+    <div className="">
+      <section className='showcase bg-top '>
         <div className='container'>
           <div className='heading-title'>
             <TitleSm title='ABOUT US' /> <br />
@@ -50,7 +50,7 @@ const ShowCase = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

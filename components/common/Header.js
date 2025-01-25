@@ -23,7 +23,7 @@ const Header = () => {
     setActiveLink(router.pathname)
   }, [router.pathname])
   return (
-    <> 
+    <div className=""> 
       <header data-aos="fade-down">
         <div className='container'>
           <div className='logo'>
@@ -95,7 +95,7 @@ const Header = () => {
           <button onClick={() => setOpen(!open)} className="nav-btn">{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25}/>}</button>
         </div>
       </header>
-    </>
+    </div>
   )
 }
 

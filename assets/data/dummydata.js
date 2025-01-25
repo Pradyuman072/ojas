@@ -22,6 +22,24 @@ export const home = [
 ]
 export const event = [
   {
+    id: 7,
+    title: "VIDWAAN",
+    cover: "../images/vidwaan.jpeg",
+    desc: [], 
+  },
+  {
+    id: 8,
+    title: "TWILIGHT TRACES",
+    cover: "../images/twilight.jpeg",
+    desc: [], 
+  },
+  {
+    id: 7,
+    title: "ONLINE HUNTING",
+    cover: "../images/hunting.jpeg",
+    desc: [], 
+  },
+  {
     id: 1,
     title: "ML WORKSHOP",
     cover: "../images/ojasevent.jpg",

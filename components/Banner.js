@@ -8,7 +8,7 @@ const Banner = () => {
         <div className='container'>
           <div >
             <Title title='We are looking forward to start new projects' /> <br />
-            <TitleLogo title='Lets take our Club to the next level!' />
+            <TitleLogo title='Lets take our Team to the next level!' />
           </div>
           <div>
 

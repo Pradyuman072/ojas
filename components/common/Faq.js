@@ -117,17 +117,17 @@ const FAQSection = () => {
         {
             number: "01",
             question: "What is Ojas?",
-            answer: "Ojas is the electrical engineering club at NIT, dedicated to fostering innovation and collaboration among students interested in electrical and electronics engineering."
+            answer: "Ojas is the electrical engineering team at NIT Hamirpur , dedicated to fostering innovation and collaboration among students interested in electrical  engineering."
         },
         {
             number: "02",
             question: "What activities do we conduct?",
-            answer: "We organize workshops, seminars, and hands-on projects related to electrical engineering, including circuit design, robotics, and renewable energy solutions."
+            answer: "We organize workshops, seminars, and hands-on projects related to electrical engineering, including circuit design, robotics."
         },
         {
             number: "03",
             question: "Who can join Ojas?",
-            answer: "Any student from NIT with an interest in electrical engineering and a desire to learn and collaborate can join Ojas."
+            answer: "Any student from NIT Hamirpur with an interest in electrical engineering and a desire to learn and collaborate can join Ojas."
         },
         {
             number: "04",
@@ -145,7 +145,7 @@ const FAQSection = () => {
             <div 
                 style={{
                     width: '100%',
-                    background: 'linear-gradient(270deg, #9b59b6, #8e44ad, #6a5acd, #4b0082)',
+                   
                     backgroundSize: '400% 400%',
                     animation: 'gradientAnimation 15s ease infinite', // Add animation for gradient
                     borderRadius: '0.75rem',
@@ -175,15 +175,7 @@ const FAQSection = () => {
                     />
                 ))}
             </div>
-            <style>
-                {`
-                    @keyframes gradientAnimation {
-                        0% { background-position: 0% 50%; }
-                        50% { background-position: 100% 50%; }
-                        100% { background-position: 0% 50%; }
-                    }
-                `}
-            </style>
+           
         </section>
     );
 };

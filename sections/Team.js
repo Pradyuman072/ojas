@@ -5,8 +5,8 @@ import React from "react"
 
 const Team = () => {
   return (
-   <>
-      <section className='agency bg-top'>
+   <div className="circuit-background">
+      <section className='agency bg-top '>
         <div className='container'>
           <div data-aos='zoom-in' data-aos-easing="ease-out-cubic" data-aos-duration="1000" className='heading-title'>
             <TitleSm className="text-6xl" title='MEET OUR TEAM' />
@@ -54,7 +54,7 @@ const Team = () => {
 
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
