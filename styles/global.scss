@@ -246,6 +246,26 @@ background-size: cover; /* or contain, depending on your needs */
   
 }
 
+@media (max-width: 600px) {
+  .preloader {
+    height: 100%;
+    width: 100%;
+    background: #000004;
+    background-image: url("../assets/images/preloader1.gif");
+    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-position: center; /* Centers the background image */
+    color: rgb(235, 195, 195);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    overflow: hidden;
+}
+}
 
 .preloader .texts-container{
   width: 100%;
@@ -260,8 +280,13 @@ background-size: cover; /* or contain, depending on your needs */
   overflow: hidden;
   margin-top: 200px;
   color:"##ffd32c";
+ 
 }
-
+ @media (max-width: 600px) {
+      .preloader .texts-container{
+        font-size: 1rem; /* Decrease font size on smaller screens */
+      }
+    }
 //showcase
 .bghero{
   background: linear-gradient(to right, #180331, #3a073c, #3c0435);
