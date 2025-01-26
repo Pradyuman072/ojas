@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { TitleSm } from "./Title";
-import { HiOutlineArrowRight } from "react-icons/hi";
 import Tilt from "../Tilt";
 import styled from 'styled-components';
-import { AiFillLinkedin } from "react-icons/ai";
 
 export const Card = ({ data, caption, show }) => {
   return (
@@ -12,19 +10,19 @@ export const Card = ({ data, caption, show }) => {
         <div className='card-img'>
           <img className="team-card" src={data.cover} alt={data.title} loading="lazy" />
         </div>
-        <div className='card-details  '>
-        <Link href={`${data.handle}`} className='title-link' target="_blank">
+        <div className='card-details'>
+          <Link href={`${data.handle}`} className='title-link' target="_blank">
             <TitleSm title={data.title} />
-         </Link>
+          </Link>
 
           {caption && (
             <Link href={`${data.handlegit}`} target="_blank" className="flex items-center">
-             {caption}
+              {caption}
             </Link>
           )}
 
           <div className='flex'>
-            <span>{data.catgeory}</span> {data.date && <span> / {data.date}</span>}
+            <span>{data.category}</span> {data.date && <span> / {data.date}</span>}
           </div>
 
           {show && (
@@ -49,14 +47,14 @@ const StyledCard = styled.div`
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5), 0 0 40px rgba(0, 0, 255, 0.3); /* Glowing effect */
   }
 
   .card-img {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
-    height: 350px; /* Set a fixed height for the image container */
+    height: 400px; /* Set a fixed height for the image container */
     width: 100%; /* Ensure it takes full width */
   }
 
@@ -69,12 +67,12 @@ const StyledCard = styled.div`
 
   .card-details {
     padding: 1rem;
-    background: linear-gradient(135deg, rgba(0, 128, 255, 0.9), rgba(255, 0, 128, 0.9)); /* Gradient from blue to pink */
+ 
     border-radius: 0 0 1rem 1rem;
     transition: background 0.3s ease;
 
     &:hover {
-      background: linear-gradient(135deg, rgba(0, 128, 255, 1), rgba(255, 0, 128, 1)); /* Darker gradient on hover */
+     background: linear-gradient(135deg, rgba(10, 25, 74, 1), rgba(0, 0, 102, 1));
     }
   }
 

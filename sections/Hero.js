@@ -61,7 +61,7 @@ const StyledHero = styled.div`
   .hero {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/path/to/your/background-image.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -71,14 +71,16 @@ const StyledHero = styled.div`
   }
 
   .sub-heading {
-    margin-bottom: 2rem;
-    font-size: 1.5rem; /* Increased font size for sub-heading */
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: #ffffff;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
   }
 
   .home-page-btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #ffcc00; /* Button color */
+    background-color: black; /* Button color */
     color: #282c34; /* Text color */
     border-radius: 5px;
     font-size: 1.2rem;

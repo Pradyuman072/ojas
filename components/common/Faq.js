@@ -47,7 +47,7 @@ const FaqCard = ({ number, question, answer }) => {
     return (
         <div 
             style={{
-                background: 'linear-gradient(to right, #9333ce, #7e22de)',
+                background: 'linear-gradient(to right, #1e3a8a, #3b82f6)', // Updated to a bluish gradient
                 borderRadius: '0.75rem', // Updated for rounded edges
                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
                 marginBottom: '1rem',
@@ -73,7 +73,7 @@ const FaqCard = ({ number, question, answer }) => {
                     <span 
                         style={{
                             backgroundColor: 'white',
-                            color: '#7e22ce',
+                            color: '#1e3a8a', // Updated to match the bluish theme
                             borderRadius: '9999px',
                             width: '2.5rem',
                             height: '2.5rem',
@@ -94,7 +94,7 @@ const FaqCard = ({ number, question, answer }) => {
                     style={{
                         padding: '1rem',
                         color: 'white',
-                        backgroundColor: 'rgba(126, 34, 206, 0.5)'
+                        backgroundColor: 'rgba(59, 130, 246, 0.5)' // Updated to a lighter bluish shade
                     }}
                     aria-labelledby="faq-content"
                 >
@@ -117,12 +117,12 @@ const FAQSection = () => {
         {
             number: "01",
             question: "What is Ojas?",
-            answer: "Ojas is the electrical engineering team at NIT Hamirpur , dedicated to fostering innovation and collaboration among students interested in electrical  engineering."
+            answer: "Ojas is the electrical engineering team at NIT Hamirpur, dedicated to fostering innovation and collaboration among students interested in electrical engineering."
         },
         {
             number: "02",
             question: "What activities do we conduct?",
-            answer: "We organize workshops, seminars, and hands-on projects related to electrical engineering, including circuit design, robotics."
+            answer: "We organize workshops, seminars, and hands-on projects related to electrical engineering, including circuit design and            robotics."
         },
         {
             number: "03",
@@ -145,7 +145,6 @@ const FAQSection = () => {
             <div 
                 style={{
                     width: '100%',
-                   
                     backgroundSize: '400% 400%',
                     animation: 'gradientAnimation 15s ease infinite', // Add animation for gradient
                     borderRadius: '0.75rem',
@@ -175,7 +174,6 @@ const FAQSection = () => {
                     />
                 ))}
             </div>
-           
         </section>
     );
 };

@@ -108,11 +108,13 @@ export const ccdata = [
 export const finaldata = [
   {
     id: 2,
+
     title: "Leena",
     cover: "../images/leena1.webp",
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/leena105/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "linkedin.com/in/leena105",
+    year:4
   },
   {
     id: 3,
@@ -121,6 +123,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/adityasood04",
     handle: "https://www.linkedin.com/in/adityasood04",
+    year:4
   },
   {
     id: 4,
@@ -129,6 +132,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/sankalp-saini-3400991a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "/",
+    year:4
   },
   {
     id: 5,
@@ -137,6 +141,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/vatsalya-sharma-698811224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     handle:"https://www.linkedin.com/in/vatsalya-sharma-698811224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    year:4
   },
   {
     id: 6,
@@ -145,6 +150,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/connect-to-rahul-bhari",
     handle: "https://www.linkedin.com/in/connect-to-rahul-bhari",
+    year:4
   },
   {
     id: 7,
@@ -153,6 +159,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/ayushi003",
     handle: "https://www.linkedin.com/in/ayushi003",
+    year:4
   },
   {
     id: 8,
@@ -161,6 +168,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/ishwer-dutt-780785217",
     handle: "https://www.linkedin.com/in/ishwer-dutt-780785217",
+    year:4
   },
   {
     id: 9,
@@ -169,6 +177,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"/",
     handle: "/",
+    year:4
   },
   {
     id: 10,
@@ -177,6 +186,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"/",
     handle: "/",
+    year:4
   },
   {
     id: 11,
@@ -185,6 +195,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"linkedin.com/in/i_ekanshverma",
     handle: "linkedin.com/in/i_ekanshverma",
+    year:4
   },
   {
     id: 12,
@@ -193,6 +204,7 @@ export const finaldata = [
     post: "Linked In",
     handlegit:"https://www.linkedin.com/in/vivek-kumar-b95675231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "https://www.linkedin.com/in/vivek-kumar-b95675231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    year:4
   },
 ]
 export const thirddata = [
@@ -201,6 +213,7 @@ export const thirddata = [
     title: "Anurag varshney",
     cover: "../images/anurag.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/anurag-varshney-6a6a4321b/",
     handle: "https://github.com/Varshneyanurag125",
   },
@@ -209,6 +222,7 @@ export const thirddata = [
     title: "Gaurav Kumar",
     cover: "../images/gaurav.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://in.linkedin.com/in/gaurav-kumar-422b3a1a6",
     handle: "https://github.com/gaurav707026",
   },
@@ -217,6 +231,7 @@ export const thirddata = [
     title: "Mohit Choudhary",
     cover: "../images/mohit 2.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/mohit-choudhary-8b821225a",
     handle: "https://github.com/MohitNITH",
 
@@ -226,6 +241,7 @@ export const thirddata = [
     title: "Drishti Sharma",
     cover: "../images/diristi.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/drishti-88b81124b",
     handle: "https://github.com/Drishti-hub",
   },
@@ -234,6 +250,7 @@ export const thirddata = [
     title: "Yash Taank",
     cover: "../images/yash.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://in.linkedin.com/in/yash-taank-b63007252",
     handle: "https://in.linkedin.com/in/yash-taank-b63007252",
   },
@@ -242,6 +259,7 @@ export const thirddata = [
     title: "Saumitra Tandon",
     cover: "../images/saumitra.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/saumitra-tandon-1031a5262",
     handle: "https://github.com/SaumitraTandon",
   },
@@ -250,6 +268,7 @@ export const thirddata = [
     title: "Bittu Kumar",
     cover: "../images/bittu.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/bittu-kumar-265884260/",
     handle: "https://github.com/BittuRoy18",
   },
@@ -258,6 +277,7 @@ export const thirddata = [
     title: "Abhishek Duharia",
     cover: "../images/abhishek.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/abhishek-duharia-2678b2266",
     handle: "https://www.linkedin.com/in/abhishek-duharia-2678b2266",
   },
@@ -266,6 +286,7 @@ export const thirddata = [
     title: "Prabha Jyal",
     cover: "../images/prabha.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/prabha-jyal-8b4607257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "https://www.linkedin.com/in/prabha-jyal-8b4607257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -274,6 +295,7 @@ export const thirddata = [
     title: "Priyanshi Lakhotia",
     cover: "../images/priyanshi.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/priyanshi-lakhotia-a4550725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "https://www.linkedin.com/in/priyanshi-lakhotia-a4550725a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -282,6 +304,7 @@ export const thirddata = [
     title: "Guncha Anam",
     cover: "../images/guncha.webp",
    post: "Linked In",
+   year:3,
     handlegit: "https://www.linkedin.com/in/guncha-anam-a9921726b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "https://www.linkedin.com/in/guncha-anam-a9921726b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
@@ -295,6 +318,7 @@ export const seconddata = [
         post: "Executive Members",
         handlegit: "https://www.linkedin.com/in/santosh-sharma-5412a62b0/",
         handle: "https://www.linkedin.com/in/santosh-sharma-5412a62b0/",
+        year:2,
       },
       {
         id: 3,
@@ -303,6 +327,7 @@ export const seconddata = [
       post: "Executive Members",
       handlegit: "https://www.linkedin.com/in/nitin-21767a2a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         handle: "https://www.linkedin.com/in/nitin-21767a2a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        year:2,
       },
       {
         id: 4,
@@ -311,6 +336,7 @@ export const seconddata = [
         post: "Executive Members",
         handlegit: "https://www.linkedin.com/in/satish-kumar-2237722b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         handle: "https://www.linkedin.com/in/satish-kumar-2237722b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        year:2,
       },
       {
         id: 5,
@@ -319,6 +345,7 @@ export const seconddata = [
         post: "Executive Members",
         handlegit: "https://www.linkedin.com/in/vansh-kumar-gautam-3b064828a?trk=contact-info",
         handle: "https://www.linkedin.com/in/vansh-kumar-gautam-3b064828a?trk=contact-info",
+        year:2,
       },
     {id: 6,
     title: "Pradyuman Sharma",
@@ -326,6 +353,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit:"https://www.linkedin.com/in/pradyuman-sharma-273a8531a/",
     handle: "https://www.linkedin.com/in/pradyuman-sharma-273a8531a/",
+      year:2,
   },
   {
     id: 7,
@@ -334,6 +362,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "http://www.linkedin.com/in/sojal-a496092b2",
     handle: "http://www.linkedin.com/in/sojal-a496092b2",
+    year:2,
   },
   {
     id: 8,
@@ -342,6 +371,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/sahil-jaswal-250a51318/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "https://www.linkedin.com/in/sahil-jaswal-250a51318/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    year:2,
   },
   {
     id: 9,
@@ -350,6 +380,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/aryan-gupta-b1407a2b5/",
     handle: "https://www.linkedin.com/in/aryan-gupta-b1407a2b5/",
+    year:2,
   },
   {
     id: 10,
@@ -358,6 +389,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/nikhil-rajput-ba5061292/?fromQR=1",
     handle: "https://www.linkedin.com/in/nikhil-rajput-ba5061292/?fromQR=1",
+    year:2,
   },
   {
     id: 11,
@@ -366,6 +398,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/harsh-kanojia-035320295/",
     handle: "https://www.linkedin.com/in/harsh-kanojia-035320295/",
+    year:2,
   },
   {
     id: 12,
@@ -374,6 +407,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/hritanjay-singh-rana/",
     handle: "https://www.linkedin.com/in/hritanjay-singh-rana/",
+    year:2,
   },
   {
     id: 13,
@@ -382,6 +416,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/ashmit-kapoor-061908321/",
     handle: "https://www.linkedin.com/in/ashmit-kapoor-061908321/",
+    year:2,
   },
   {
     id: 14,
@@ -390,6 +425,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "hhttps://www.linkedin.com/in/bansh-k-95263a343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "https://www.linkedin.com/in/bansh-k-95263a343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    year:2,
   },
   {
     id: 15,
@@ -398,6 +434,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/priyanshi-saini-9766602a8/",
     handle: "https://www.linkedin.com/in/priyanshi-saini-9766602a8/",
+    year:2,
   },
   
   {
@@ -407,6 +444,7 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/aryan-kadda-32a0332a4/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     handle: "https://www.linkedin.com/in/aryan-kadda-32a0332a4/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    year:2,
   },
   {
     id: 16,
@@ -415,14 +453,16 @@ export const seconddata = [
     post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/abhinav-kumar-0254651b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     handle: "https://www.linkedin.com/in/abhinav-kumar-0254651b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  }, {
+    year:2,},
+   {
        id: 1,
        title: "Utkarsh Gupta",
        cover: "../images/utkarsh.webp",
        post: "Executive Members",
        handlegit: "https://www.linkedin.com/in/utkarsh-gupta-5aa661261",
        handle: "https://www.linkedin.com/in/utkarsh-gupta-5aa661261",
-     },
+      year:2,
+      },
 ],
 firstdata=[
   {
@@ -432,7 +472,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/vaibhav-sharma-78b738323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/vaibhav-sharma-78b738323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 2,
       "title": "Aryan Dhaka",
@@ -440,7 +482,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/aryan-dhaka-20635b324",
       "handle": "https://www.linkedin.com/in/aryan-dhaka-20635b324",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 3,
       "title": "Ritish Kumar",
@@ -448,7 +492,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/ritish-kumar-30b131325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/ritish-kumar-30b131325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 4,
       "title": "Ronak Dotasara",
@@ -456,7 +502,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "Ronak Dotasara - India | Professional Profile | LinkedIn",
       "handle": "Ronak Dotasara - India | Professional Profile | LinkedIn",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 5,
       "title": "Pankaj",
@@ -464,7 +512,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/pankaj-033785316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/pankaj-033785316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 6,
       "title": "Gourav",
@@ -472,7 +522,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/gourav-gourav-49b204348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/gourav-gourav-49b204348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 7,
       "title": "Ajay Suryawanshi",
@@ -480,7 +532,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/ajay-suryawanshi-320b26347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/ajay-suryawanshi-320b26347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 8,
       "title": "Piyush Kumar",
@@ -488,7 +542,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/piyush-kumar-3b1b21338?utm_source=share&utm_campaign=s",
       "handle": "https://www.linkedin.com/in/piyush-kumar-3b1b21338?utm_source=share&utm_campaign=s",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 9,
       "title": "Shivansh Gupta",
@@ -496,7 +552,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "Shivansh Gupta - Hamirpur, Himachal Pradesh, India | Professional Profile | LinkedIn",
       "handle": "Shivansh Gupta - Hamirpur, Himachal Pradesh, India | Professional Profile | LinkedIn",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 10,
       "title": "Pallavi Vijay",
@@ -504,7 +562,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/pallavi-vijay-5bb82a348/",
       "handle": "https://www.linkedin.com/in/pallavi-vijay-5bb82a348/",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 11,
       "title": "Tanuj",
@@ -512,7 +572,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/tanuj-verma-5a8ba0347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/tanuj-verma-5a8ba0347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 12,
       "title": "Priti",
@@ -520,7 +582,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "devenderdevender51003@gmail.com",
       "handle": "devenderdevender51003@gmail.com",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 13,
       "title": "Shailja",
@@ -528,7 +592,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/shailja-choudhary-999910348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/shailja-choudhary-999910348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 14,
       "title": "Ivan Sharma",
@@ -536,7 +602,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "www.linkedin.com/in/ivan-sharma-86a51218b",
       "handle": "www.linkedin.com/in/ivan-sharma-86a51218b",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 15,
       "title": "Nitin Koundal",
@@ -544,7 +612,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/nitin-koundal-a65b92293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/nitin-koundal-a65b92293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 16,
       "title": "Vaibhav Kumar",
@@ -552,7 +622,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/vaibhav-kumar-196301348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/vaibhav-kumar-196301348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 17,
       "title": "Riya Choudhary",
@@ -560,7 +632,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/riya-choudhary-0882a230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/riya-choudhary-0882a230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 18,
       "title": "Arushi Prajapati",
@@ -568,7 +642,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/arushi-prajapati-27a11433a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/arushi-prajapati-27a11433a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
   {
       "id": 19,
       "title": "Akshit Vardhan",
@@ -576,7 +652,9 @@ firstdata=[
       "post": "volunteer",
       "handlegit": "https://www.linkedin.com/in/akshit-vardhan-6b290a324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       "handle": "https://www.linkedin.com/in/akshit-vardhan-6b290a324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
+      year:1  
+    }
+      ,
       
         {
             "id": 20,
@@ -584,8 +662,10 @@ firstdata=[
             "cover": "../images/arohi_sharma.webp",
             "post": "volunteer",
             "handlegit": "https://www.linkedin.com/in/arohi-sharma-82bb5a323",
-            "handle": "https://www.linkedin.com/in/arohi-sharma-82bb5a323"
-        },
+            "handle": "https://www.linkedin.com/in/arohi-sharma-82bb5a323",
+          year:1
+          }
+        ,
         {
             "id": 21,
             "title": "Suraj Gautam",
@@ -593,6 +673,8 @@ firstdata=[
             "post": "volunteer",  
             "handlegit": "https://www.linkedin.com/in/suraj-gautam-655967334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             "handle": "https://www.linkedin.com/in/suraj-gautam-655967334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        }
+          year:1
+
+          }
     
 ]

@@ -19,16 +19,16 @@ const Preloader = () => {
 
   return (
     <div className="preloader">
-      {/* {showText && ( // Render text only if showText is true
+      {showText && ( // Render text only if showText is true
       <div className="texts-container">
-    <h2  >
+    <h2 className="" >
        TEAM OJAS
     </h2>
          
 
         </div>
        
-      )} */}
+      )}
     </div>
   );
 };
