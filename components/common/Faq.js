@@ -47,14 +47,14 @@ const FaqCard = ({ number, question, answer }) => {
     return (
         <div 
             style={{
-                background: 'linear-gradient(to right, #1e3a8a, #3b82f6)', // Updated to a bluish gradient
-                borderRadius: '0.75rem', // Updated for rounded edges
+                background: 'linear-gradient(to right, #1e3a8a, #3b82f6)',
+                borderRadius: '0.75rem',
                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
                 marginBottom: '1rem',
                 overflow: 'hidden',
                 transition: 'all 0.3s ease-in-out',
             }}
-            data-aos="fade-up" // Add AOS attribute here
+            data-aos="fade-up"
         >
             <div 
                 style={{
@@ -73,7 +73,7 @@ const FaqCard = ({ number, question, answer }) => {
                     <span 
                         style={{
                             backgroundColor: 'white',
-                            color: '#1e3a8a', // Updated to match the bluish theme
+                            color: '#1e3a8a',
                             borderRadius: '9999px',
                             width: '2.5rem',
                             height: '2.5rem',
@@ -89,18 +89,20 @@ const FaqCard = ({ number, question, answer }) => {
                 </div>
             </div>
 
-            {isExpanded && (
-                <div 
-                    style={{
-                        padding: '1rem',
-                        color: 'white',
-                        backgroundColor: 'rgba(59, 130, 246, 0.5)' // Updated to a lighter bluish shade
-                    }}
-                    aria-labelledby="faq-content"
-                >
-                    <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>{answer}</p>
-                </div>
-            )}
+            <div 
+                style={{
+                    padding: '1rem',
+                    color: 'white',
+                    backgroundColor: 'rgba(59, 130, 246, 0.5)',
+                    maxHeight: isExpanded ? '200px' : '0', // Control height based on expansion
+                    overflow: 'hidden',
+                    transition: 'max-height 0.5s ease, opacity 0.5s ease', // Smooth transition
+                    opacity: isExpanded ? 1 : 0, // Fade effect
+                }}
+                aria-labelledby="faq-content"
+            >
+                <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>{answer}</p>
+            </div>
         </div>
     );
 };
@@ -108,8 +110,8 @@ const FaqCard = ({ number, question, answer }) => {
 const FAQSection = () => {
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration
-            once: false, // Whether animation should happen only once
+            duration: 1200, // Increased animation duration
+            once: false,
         });
     }, []);
 
@@ -122,7 +124,7 @@ const FAQSection = () => {
         {
             number: "02",
             question: "What activities do we conduct?",
-            answer: "We organize workshops, seminars, and hands-on projects related to electrical engineering, including circuit design and            robotics."
+            answer: "We organize workshops, seminars, and hands-on projects related to electrical engineering, including circuit design and robotics."
         },
         {
             number: "03",
@@ -137,21 +139,17 @@ const FAQSection = () => {
     ];
 
     return (
-        <section style={{ 
-            maxWidth: '56rem', 
-            margin: '0 auto', 
-            padding: '3rem 1rem' 
-        }}>
+        <section style={{ maxWidth: '56rem', margin: '0 auto', padding: '3rem 1rem' }}>
             <div 
                 style={{
                     width: '100%',
                     backgroundSize: '400% 400%',
-                    animation: 'gradientAnimation 15s ease infinite', // Add animation for gradient
+                    animation: 'gradientAnimation 15s ease infinite',
                     borderRadius: '0.75rem',
                     boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
                     padding: '1.5rem'
                 }}
-                data-aos="fade-up" // Add AOS attribute here for the entire section
+                data-aos="fade-up"
             >
                 <h2 
                     style={{
