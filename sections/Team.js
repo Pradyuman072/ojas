@@ -22,7 +22,8 @@ const Team = () => {
               value={selectedYear}
               onChange={(e) => setSelectedYear(e.target.value)}
               style={{
-                backgroundColor:"1a1a4b",
+                backgroundColor:"transparent",
+                color:"white",
                 padding: '10px',
                 border: '1px solid #ccc',
                 borderRadius: '5px',

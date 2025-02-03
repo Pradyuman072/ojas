@@ -396,8 +396,8 @@ export const seconddata = [
     title: "Harsh Kanojia",
     cover: "../images/harshK.webp",
     post: "Executive Members",
-    handlegit: "https://www.linkedin.com/in/harsh-kanojia-035320295/",
-    handle: "https://www.linkedin.com/in/harsh-kanojia-035320295/",
+    handlegit: "https://www.linkedin.com/in/harsh-kannaujiya-524660349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    handle: "https://www.linkedin.com/in/harsh-kannaujiya-524660349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     year:2,
   },
   {
