@@ -81,6 +81,7 @@ footer::before {
     width: 100%;
     height: 90vh;
     background-image: url("../assets/images/back.gif");
+    background-repeat: repeat;
     background-size:cover;
     background-position: center;
     z-index: 1;
@@ -239,6 +240,7 @@ footer::before {
   right: 0;
   z-index: 1000;
   display: flex;
+  background-repeat: no-repeat; 
   justify-content: center;
   // align-items: center; 
   overflow: hidden;
@@ -252,7 +254,7 @@ background-size: cover; /* or contain, depending on your needs */
     width: 100%;
     background: #000004;
     background-image: url("../assets/images/preloader1.gif");
-    background-repeat: no-repeat; /* Prevents the background from repeating */
+    background-repeat: no-repeat; 
     background-position: center; /* Centers the background image */
     color: rgb(235, 195, 195);
     position: fixed;
@@ -292,7 +294,9 @@ background-size: cover; /* or contain, depending on your needs */
   background: linear-gradient(to right, #180331, #3a073c, #3c0435);
 }
 .showcase {  
-  
+    .heading-title{
+      margin-top: 2rem;
+    }
   .card-img {
     height: 400px;
   

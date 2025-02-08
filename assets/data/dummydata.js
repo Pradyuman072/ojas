@@ -377,7 +377,7 @@ export const seconddata = [
     id: 9,
     title: "Aryan Gupta",
     cover: "../images/aryang.webp",
-    post: "Executive Members",
+  post: "Executive Members",
     handlegit: "https://www.linkedin.com/in/aryan-gupta-b1407a2b5/",
     handle: "https://www.linkedin.com/in/aryan-gupta-b1407a2b5/",
     year:2,
