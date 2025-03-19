@@ -5,11 +5,10 @@ import Tilt from "@/components/Tilt";
 import styled from 'styled-components';
 import EmailSubmissionForm from "@/sections/ContactUs";
 import FAQSection from "@/components/common/Faq";
-
-
+import Orb from './Orb';
 const Hero = () => {
   return (
-    <StyledHero className="circuit-background">
+    <StyledHero className="">
      
 
       <section className='hero  '>
@@ -24,29 +23,21 @@ const Hero = () => {
           </div>
         </div>
         <div data-aos="zoom-in" className="snow">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
-            <g fill="#4b1b88" fillOpacity="0.8" transform="translate(55 42)">
-              <g id="snow-bottom-layer">
-                {/* Snow ellipses */}
-                {Array.from({ length: 50 }).map((_, i) => (
-                  <ellipse key={i} cx={Math.random() * 1024} cy={Math.random() * 1536} rx="6" ry="5.5" />
-                ))}
-              </g>
-            </g>
-            <g fill="#FFF" fillOpacity="0.4" transform="translate(65 63)">
-              <g id="snow-top-layer">
-                {/* Snow circles */}
-                {Array.from({ length: 50 }).map((_, i) => (
-                  <circle key={i} cx={Math.random() * 1024} cy={Math.random() * 1536} r="8" />
-                ))}
-              </g>
-            </g>
-          </svg>
+       
+<div style={{ width: '100%', height: "150%", position: 'relative' }}>
+  <Orb
+    hoverIntensity={0.5}
+    rotateOnHover={true}
+    hue={10}
+    forceHoverState={false}
+  />
+</div>
+           
         </div>
     
    
       </section>
-      <div ><AboutUs />
+      <div className="circuit-background" ><AboutUs />
        {/* <FAQSection/> */}
                 <EmailSubmissionForm/>
                 <FAQSection/>
@@ -61,7 +52,6 @@ const StyledHero = styled.div`
   .hero {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     color: #ffffff;
     display: flex;
     flex-direction: column;
