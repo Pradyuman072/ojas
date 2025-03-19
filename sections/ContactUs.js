@@ -32,10 +32,10 @@ export default function EmailSubmissionForm() {
     setStatus('Sending...');
     try {
       const result = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        'service_lsq4ntl',
+        'template_9verytf',
         formData,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        '7ver1tPHmU-csThcG'
       );
       setStatus('Message sent successfully!');
       setFormData({
