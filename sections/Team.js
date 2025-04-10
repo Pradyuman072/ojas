@@ -15,7 +15,7 @@ const Team = () => {
     <div className="circuit-background">
       <section className='agency bg-top'>
         <div className='container'>
-          <div className='filter-container' style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px' }}>
+          <div className='filter-container text-bold text-3xl' style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
             <label htmlFor="year-filter" style={{ marginRight: '10px', fontWeight: 'bold' }}>Filter by Year: </label>
             <select
               id="year-filter"

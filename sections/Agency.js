@@ -3,6 +3,7 @@ import Tilt from "@/components/Tilt"
 import { Title, TitleSm } from "@/components/common/Title"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ProjectsPage from './IMC';
 
 const ProjectCard = ({ imageSrc, title, description }) => {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -83,7 +84,9 @@ const Agency = () => {
 
   return (
     <>
+  
       <section className='agency bg-top'>
+      <ProjectsPage />
         <div className='container'>
           <div className='heading-title'>
             <TitleSm title='ABOUT PROJECTS' /> <br />
