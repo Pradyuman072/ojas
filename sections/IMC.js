@@ -319,7 +319,7 @@ export default function ProjectsPage() {
       description: "A device connecting web designing and real world prototyping.",
       image: "/images/illumitrace.jpeg",
       difficulty: "Advanced",
-      components: ["Microcontroller", "7-Segment Display", "Crystal Oscillator", ""],
+      components: ["Microcontroller", "Led Materix"],
       docLink: "/docs/digital-clock",
       learnMoreLink: "/learn/illumitrace"
     },
@@ -496,16 +496,7 @@ export default function ProjectsPage() {
   };
   
   // Handle card click
-  const handleCardClick = (index, e) => {
-    if (isDragging) {
-      e.preventDefault();
-      e.stopPropagation();
-      return;
-    }
-    
-    window.location.href = projects[index].learnMoreLink;
-  };
-  
+
   // Handle dot indicator click
   const handleDotClick = (index) => {
     // Stop auto-scrolling temporarily
@@ -571,7 +562,7 @@ export default function ProjectsPage() {
                   opacity: activeIndex === index ? 1 : 0.5,
                 }}
                 transition={{ duration: 0.3 }}
-                onClick={(e) => handleCardClick(index, e)}
+              
               >
                 <Card>
                   <ProjectImage style={{ backgroundImage: `url(${project.image})` }}>
@@ -580,7 +571,7 @@ export default function ProjectsPage() {
                   <CardHeader>
                     <CardTitleWrapper>
                       <CardTitle>{project.title}</CardTitle>
-                      <Badge difficulty={project.difficulty}>{project.difficulty}</Badge>
+                    
                     </CardTitleWrapper>
                     <CardDescription>{project.description}</CardDescription>
                   </CardHeader>

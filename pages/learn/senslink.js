@@ -314,7 +314,7 @@ export default function SenseLinkPage() {
             <Image
               src="/images/senslink.jpg"
               alt="SenseLink Project"
-              width={1000}
+              width={700}
               height={600}
               className="w-full h-auto object-cover"
               priority
@@ -363,14 +363,7 @@ export default function SenseLinkPage() {
               </FeatureGrid>
             </div>
           </SectionContent>
-          <SectionImage className="section-image" data-aos="fade-left" data-aos-delay="200">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="SenseLink System Overview"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </SectionImage>
+       
         </Section>
 
         <Section data-aos="fade-up">
@@ -409,14 +402,7 @@ export default function SenseLinkPage() {
               </li>
             </OrderedList>
           </SectionContent>
-          <SectionImage className="section-image" data-aos="fade-right" data-aos-delay="200">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="SenseLink Workflow Diagram"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </SectionImage>
+        
         </Section>
 
         <Section data-aos="fade-up">
@@ -460,14 +446,7 @@ export default function SenseLinkPage() {
               </List>
             </Card>
           </SectionContent>
-          <SectionImage className="section-image" data-aos="fade-left" data-aos-delay="200">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="SenseLink Applications"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </SectionImage>
+        
         </Section>
 
         <FeatureGrid data-aos="fade-up">
@@ -548,14 +527,7 @@ export default function SenseLinkPage() {
               </List>
             </Card>
           </SectionContent>
-          <SectionImage className="section-image" data-aos="fade-left" data-aos-delay="200">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="SenseLink Future Roadmap"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </SectionImage>
+         
         </Section>
       </Container>
     </DarkLayout>

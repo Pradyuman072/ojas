@@ -252,14 +252,7 @@ export default function FireVoltPage() {
               </p>
             </Card>
           </SectionContent>
-          <SectionImage className="section-image" data-aos="fade-left" data-aos-delay="200">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="FireVolt Green Combustion Process"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </SectionImage>
+        
         </Section>
 
         <Section data-aos="fade-up">
@@ -304,14 +297,7 @@ export default function FireVoltPage() {
               </li>
             </List>
           </SectionContent>
-          <SectionImage className="section-image" data-aos="fade-right" data-aos-delay="200">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="FireVolt Green Technology"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </SectionImage>
+        
         </Section>
 
         <SectionGrid data-aos="fade-up">
@@ -395,14 +381,7 @@ export default function FireVoltPage() {
               </p>
             </Card>
           </SectionContent>
-          <SectionImage className="section-image" data-aos="fade-left" data-aos-delay="200">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="FireVolt Green Impact"
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </SectionImage>
+        
         </Section>
       </Container>
     </DarkLayout>

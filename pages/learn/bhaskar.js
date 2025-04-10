@@ -90,7 +90,7 @@ const HeroImage = styled.div`
 
 const Section = styled.section`
   margin-bottom: 6rem;
-  background-color: rgba(18, 18, 20, 0.7);
+  
   border-radius: 1rem;
   padding: 2.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
@@ -252,7 +252,7 @@ const ElementsGrid = styled.div`
 `
 
 const ElementCard = styled.div`
-  background-color: rgba(30, 30, 30, 0.7);
+
   border-radius: 0.75rem;
   padding: 1.25rem;
   border: 1px solid #333;
@@ -327,16 +327,7 @@ export default function BhaskarPage() {
                 without relying on electrical components, making renewable energy more accessible to underserved communities.
               </p>
             </SectionContent>
-            
-            <SectionImage data-aos="fade-left" data-aos-delay="300">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Solar Tracking Problem"
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover"
-              />
-            </SectionImage>
+         
           </SectionInner>
         </Section>
 
@@ -423,15 +414,7 @@ export default function BhaskarPage() {
               </StyledList>
             </SectionContent>
             
-            <SectionImage data-aos="fade-left" data-aos-delay="300">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Bhaskara Implementation Process"
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover"
-              />
-            </SectionImage>
+           
           </SectionInner>
         </Section>
 

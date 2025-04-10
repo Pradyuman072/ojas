@@ -180,7 +180,7 @@ const Card = styled.div`
   border-radius: 1rem;
   padding: 2rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #333;
+ 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   
   p {
@@ -198,7 +198,7 @@ const OutcomeCard = styled.div`
   border-radius: 1rem;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #333;
+ 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -207,7 +207,7 @@ const OutcomeCard = styled.div`
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-    border-color: rgba(167, 112, 239, 0.4);
+   
   }
   
   svg {
@@ -261,7 +261,7 @@ export default function TrackVisionPage() {
             <Image
               src="/images/trackvision.png"
               alt="Track Vision Project"
-              width={1200}
+              width={900}
               height={600}
               className="w-full h-auto object-cover"
               priority
@@ -297,15 +297,7 @@ export default function TrackVisionPage() {
               </p>
             </Card>
           </SectionContent>
-          <SectionImage data-aos="fade-left">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="Track Vision System Overview"
-              width={800}
-              height={600}
-              className="w-full h-full object-cover"
-            />
-          </SectionImage>
+        
         </Section>
 
         <Section>
@@ -358,15 +350,7 @@ export default function TrackVisionPage() {
               </li>
             </List>
           </SectionContent>
-          <SectionImage data-aos="fade-left">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="Track Vision Technology Components"
-              width={800}
-              height={600}
-              className="w-full h-full object-cover"
-            />
-          </SectionImage>
+        
         </Section>
 
         <Section>
@@ -445,15 +429,7 @@ export default function TrackVisionPage() {
               </OutcomeCard>
             </OutcomesGrid>
           </SectionContent>
-          <SectionImage data-aos="fade-left">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="Track Vision Project Outcomes"
-              width={800}
-              height={600}
-              className="w-full h-full object-cover"
-            />
-          </SectionImage>
+         
         </Section>
       </Container>
     </DarkLayout>

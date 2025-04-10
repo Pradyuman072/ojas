@@ -244,15 +244,7 @@ export default function IllumiTracePage() {
               feedback to make the process intuitive, engaging, and educational.
             </p>
           </SectionContent>
-          <SectionImage data-aos="fade-left" data-aos-delay="400">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="PCB Soldering Challenges"
-              width={800}
-              height={600}
-              className="w-full h-auto object-cover"
-            />
-          </SectionImage>
+        
         </Section>
 
         <Divider data-aos="fade-in" />
@@ -315,15 +307,7 @@ export default function IllumiTracePage() {
               </li>
             </List>
           </SectionContent>
-          <SectionImage data-aos="fade-left" data-aos-delay="600">
-            <Image
-              src="/placeholder.svg?height=600&width=800"
-              alt="Illumitrace Approach Diagram"
-              width={800}
-              height={600}
-              className="w-full h-auto object-cover"
-            />
-          </SectionImage>
+         
         </Section>
 
         <Divider data-aos="fade-in" />
