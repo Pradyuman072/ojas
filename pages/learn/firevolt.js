@@ -10,14 +10,22 @@ import AOS from "aos"
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem;
+  
+  @media (min-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `
 
 const BreadcrumbNav = styled.nav`
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 0.875rem;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `
 
 const BackLink = styled(Link)`
@@ -33,37 +41,59 @@ const BackLink = styled(Link)`
 `
 
 const ProjectHeader = styled.div`
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   text-align: center;
   position: relative;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
 `
 
 const ProjectTitle = styled.h1`
-  font-size: 3.5rem;
+  font-size: 2.25rem;
   font-weight: 700;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   display: inline-block;
   text-shadow: 0 2px 10px rgba(255, 126, 95, 0.2);
+  
+  @media (min-width: 768px) {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
 `
 
 const ProjectSubtitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   color: #bdbdbd;
   font-weight: 400;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem;
+  
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
 `
 
 const MainImage = styled.div`
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   position: relative;
+  width: 100%;
+  height: auto;
+  
+  @media (min-width: 768px) {
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
   
   &::after {
     content: '';
@@ -75,68 +105,96 @@ const MainImage = styled.div`
     background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0.7) 100%);
     pointer-events: none;
   }
+  
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+  }
 `
 
 const Section = styled.section`
-  margin-bottom: 6rem;
-  border-radius: 1rem;
-  
-  padding: 2.5rem;
+  margin-bottom: 3rem;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   
-  
   @media (min-width: 768px) {
+    margin-bottom: 6rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
   }
   
-  &:nth-child(even) {
-    .section-content {
-      order: 2;
-    }
-    
-    .section-image {
-      order: 1;
+  @media (min-width: 768px) {
+    &:nth-child(even) {
+      .section-content {
+        order: 2;
+      }
+      
+      .section-image {
+        order: 1;
+      }
     }
   }
 `
 
 const SectionContent = styled.div`
   color: #e0e0e0;
-  line-height: 1.8;
-  font-size: 1.1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  
+  @media (min-width: 768px) {
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
 `
 
 const SectionImage = styled.div`
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   height: 100%;
-  min-height: 350px;
+  min-height: 250px;
   position: relative;
+  margin-top: 1.5rem;
   
-  @media (max-width: 767px) {
-    margin-top: 2rem;
-    min-height: 250px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    min-height: 350px;
   }
 `
 
 const SectionTitle = styled.h3`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
   
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+  
   svg {
-    margin-right: 0.75rem;
+    margin-right: 0.5rem;
     color: #ff7e5f;
     filter: drop-shadow(0 2px 5px rgba(255, 126, 95, 0.3));
+    
+    @media (min-width: 768px) {
+      margin-right: 0.75rem;
+    }
   }
 `
 
@@ -147,38 +205,66 @@ const List = styled.ul`
   list-style: none;
   
   li {
-    margin-bottom: 1rem;
-    padding-left: 2rem;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
     position: relative;
+    
+    @media (min-width: 768px) {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+    }
     
     strong {
       color: #f5f5f5;
       display: block;
       margin-bottom: 0.25rem;
-      font-size: 1.1rem;
+      font-size: 1rem;
+      
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+      }
     }
     
     &:before {
       content: '';
       position: absolute;
       left: 0;
-      top: 0.5rem;
-      width: 10px;
-      height: 10px;
+      top: 0.45rem;
+      width: 8px;
+      height: 8px;
       background: linear-gradient(to right, #ff7e5f, #feb47b);
       border-radius: 50%;
+      
+      @media (min-width: 768px) {
+        top: 0.5rem;
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 `
 
 const Card = styled.div`
   background-color: rgba(20, 20, 20, 0.8);
-  border-radius: 0.8rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
- 
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
   
-  line-height: 1.8;
+  @media (min-width: 768px) {
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `
 
 const TextHighlight = styled.span`
@@ -189,10 +275,13 @@ const TextHighlight = styled.span`
 const SectionGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
   
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 6rem;
   }
 `
 
@@ -202,7 +291,8 @@ export default function FireVoltPage() {
       duration: 800,
       once: false,
       mirror: true,
-      offset: 100,
+      offset: 50,
+      disable: window.innerWidth < 768 ? true : false
     });
   }, []);
 
@@ -225,7 +315,7 @@ export default function FireVoltPage() {
               alt="FireVolt Green Project"
               width={1200}
               height={600}
-              className="w-full h-auto object-cover"
+              className="responsive-image"
               priority
             />
           </MainImage>
@@ -234,7 +324,7 @@ export default function FireVoltPage() {
         <Section data-aos="fade-up">
           <SectionContent className="section-content">
             <SectionTitle>
-              <Flame size={28} /> Abstract
+              <Flame size={24} /> Abstract
             </SectionTitle>
             <Card>
               <p>
@@ -258,7 +348,7 @@ export default function FireVoltPage() {
         <Section data-aos="fade-up">
           <SectionContent className="section-content">
             <SectionTitle>
-              <Zap size={28} /> Technology Used
+              <Zap size={24} /> Technology Used
             </SectionTitle>
             <List>
               <li data-aos="fade-up" data-aos-delay="100">
@@ -303,7 +393,7 @@ export default function FireVoltPage() {
         <SectionGrid data-aos="fade-up">
           <div>
             <SectionTitle>
-              <Leaf size={28} /> Future Scope
+              <Leaf size={24} /> Future Scope
             </SectionTitle>
             <List>
               <li data-aos="fade-up" data-aos-delay="100">
@@ -335,7 +425,7 @@ export default function FireVoltPage() {
           </div>
           <div>
             <SectionTitle>
-              <Check size={28} /> Project Outcomes
+              <Check size={24} /> Project Outcomes
             </SectionTitle>
             <List>
               <li data-aos="fade-up" data-aos-delay="100">
@@ -370,7 +460,7 @@ export default function FireVoltPage() {
         <Section data-aos="fade-up">
           <SectionContent className="section-content">
             <SectionTitle>
-              <Flame size={28} /> Impact & Benefits
+              <Flame size={24} /> Impact & Benefits
             </SectionTitle>
             <Card>
               <p>

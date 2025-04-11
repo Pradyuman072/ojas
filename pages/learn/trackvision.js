@@ -12,6 +12,10 @@ const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
 `
 
 const BreadcrumbNav = styled.nav`
@@ -19,6 +23,10 @@ const BreadcrumbNav = styled.nav`
   align-items: center;
   margin-bottom: 2rem;
   font-size: 0.875rem;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 1.5rem;
+  }
 `
 
 const BackLink = styled(Link)`
@@ -36,6 +44,10 @@ const BackLink = styled(Link)`
 const ProjectHeader = styled.div`
   margin-bottom: 3rem;
   text-align: center;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `
 
 const ProjectTitle = styled.h1`
@@ -47,6 +59,14 @@ const ProjectTitle = styled.h1`
   margin-bottom: 1rem;
   display: inline-block;
   text-shadow: 0 0 30px rgba(167, 112, 239, 0.3);
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `
 
 const ProjectSubtitle = styled.h2`
@@ -55,6 +75,16 @@ const ProjectSubtitle = styled.h2`
   font-weight: 400;
   margin-bottom: 2rem;
   letter-spacing: 1px;
+  
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
 `
 
 const HeroImage = styled.div`
@@ -73,6 +103,27 @@ const HeroImage = styled.div`
     background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.4));
     pointer-events: none;
   }
+  
+  @media (max-width: 768px) {
+    border-radius: 0.75rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  }
+`
+
+const ResponsiveImage = styled(Image)`
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 1.5 / 1;
+  
+  @media (max-width: 768px) {
+    aspect-ratio: 4 / 3;
+  }
+  
+  @media (max-width: 480px) {
+    aspect-ratio: 1 / 1;
+  }
 `
 
 const Section = styled.section`
@@ -89,6 +140,16 @@ const Section = styled.section`
       flex-direction: row-reverse;
     }
   }
+  
+  @media (max-width: 768px) {
+    margin-bottom: 4rem;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 480px) {
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+  }
 `
 
 const SectionContent = styled.div`
@@ -99,6 +160,11 @@ const SectionContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+  @media (max-width: 768px) {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
 `
 
 const SectionImage = styled.div`
@@ -120,6 +186,15 @@ const SectionImage = styled.div`
     background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
     pointer-events: none;
   }
+  
+  @media (max-width: 768px) {
+    border-radius: 0.75rem;
+    min-height: 300px;
+  }
+  
+  @media (max-width: 480px) {
+    min-height: 250px;
+  }
 `
 
 const SectionTitle = styled.h3`
@@ -136,6 +211,20 @@ const SectionTitle = styled.h3`
     margin-right: 0.75rem;
     color: #a770ef;
     filter: drop-shadow(0 0 8px rgba(167, 112, 239, 0.3));
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+    svg {
+      margin-right: 0.5rem;
+    }
   }
 `
 
@@ -172,6 +261,18 @@ const List = styled.ul`
       }
     }
   }
+  
+  @media (max-width: 768px) {
+    margin-left: 1.25rem;
+    
+    li {
+      margin-bottom: 0.75rem;
+    }
+    
+    ul {
+      margin: 0.5rem 0 0.5rem 1.25rem;
+    }
+  }
 `
 
 const Card = styled.div`
@@ -180,7 +281,6 @@ const Card = styled.div`
   border-radius: 1rem;
   padding: 2rem;
   margin-bottom: 1.5rem;
- 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   
   p {
@@ -190,6 +290,16 @@ const Card = styled.div`
       margin-bottom: 0;
     }
   }
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+  }
 `
 
 const OutcomeCard = styled.div`
@@ -198,7 +308,6 @@ const OutcomeCard = styled.div`
   border-radius: 1rem;
   padding: 1.5rem;
   margin-bottom: 1rem;
- 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -207,7 +316,6 @@ const OutcomeCard = styled.div`
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-   
   }
   
   svg {
@@ -222,6 +330,26 @@ const OutcomeCard = styled.div`
     font-weight: 600;
     margin-right: 0.5rem;
   }
+  
+  @media (max-width: 768px) {
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    
+    svg {
+      min-width: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+    svg {
+      margin-right: 0.75rem;
+    }
+  }
 `
 
 const OutcomesGrid = styled.div`
@@ -232,6 +360,10 @@ const OutcomesGrid = styled.div`
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  @media (max-width: 480px) {
+    gap: 0.75rem;
+  }
 `
 
 export default function TrackVisionPage() {
@@ -240,7 +372,8 @@ export default function TrackVisionPage() {
       duration: 800,
       once: true,
       easing: 'ease-out',
-      offset: 100
+      offset: 100,
+      disable: window.innerWidth < 768 ? 'mobile' : false
     });
   }, []);
 
@@ -258,12 +391,11 @@ export default function TrackVisionPage() {
           <ProjectTitle>Track Vision</ProjectTitle>
           <ProjectSubtitle>Railway Signal Detector During Fog</ProjectSubtitle>
           <HeroImage>
-            <Image
+            <ResponsiveImage
               src="/images/trackvision.png"
               alt="Track Vision Project"
               width={900}
               height={600}
-              className="w-full h-auto object-cover"
               priority
             />
           </HeroImage>
@@ -297,7 +429,6 @@ export default function TrackVisionPage() {
               </p>
             </Card>
           </SectionContent>
-        
         </Section>
 
         <Section>
@@ -350,7 +481,6 @@ export default function TrackVisionPage() {
               </li>
             </List>
           </SectionContent>
-        
         </Section>
 
         <Section>
@@ -429,7 +559,6 @@ export default function TrackVisionPage() {
               </OutcomeCard>
             </OutcomesGrid>
           </SectionContent>
-         
         </Section>
       </Container>
     </DarkLayout>

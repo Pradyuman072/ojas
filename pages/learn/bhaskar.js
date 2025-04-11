@@ -88,6 +88,17 @@ const HeroImage = styled.div`
   }
 `
 
+const ResponsiveImageContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;  /* 2:1 aspect ratio */
+  
+  @media (max-width: 768px) {
+    padding-bottom: 75%;  /* 4:3 aspect ratio for mobile */
+  }
+`
+
 const Section = styled.section`
   margin-bottom: 6rem;
   
@@ -110,6 +121,12 @@ const Section = styled.section`
   
   @media (max-width: 768px) {
     padding: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 1.25rem;
+    margin-bottom: 3rem;
   }
 `
 
@@ -122,6 +139,10 @@ const SectionInner = styled.div`
     flex-direction: row;
     align-items: flex-start;
   }
+  
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+  }
 `
 
 const SectionContent = styled.div`
@@ -132,6 +153,14 @@ const SectionContent = styled.div`
   
   p {
     margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 640px) {
+    font-size: 1rem;
+    
+    p {
+      margin-bottom: 1rem;
+    }
   }
 `
 
@@ -162,6 +191,7 @@ const SectionTitle = styled.h3`
   
   @media (max-width: 640px) {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -170,6 +200,11 @@ const SectionTitleWithIcon = styled.div`
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
+  
+  @media (max-width: 640px) {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
 `
 
 const IconWrapper = styled.div`
@@ -188,6 +223,16 @@ const IconWrapper = styled.div`
   @media (max-width: 640px) {
     width: 40px;
     height: 40px;
+  }
+  
+  @media (max-width: 480px) {
+    width: 36px;
+    height: 36px;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 `
 
@@ -220,6 +265,23 @@ const StyledList = styled.ul`
       }
     }
   }
+  
+  @media (max-width: 640px) {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+      
+      ul {
+        margin-left: 1rem;
+        
+        li::before {
+          left: -1rem;
+        }
+      }
+    }
+  }
 `
 
 const Card = styled.div`
@@ -239,6 +301,15 @@ const Card = styled.div`
   p {
     margin-bottom: 0;
   }
+  
+  @media (max-width: 640px) {
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
 `
 
 const ElementsGrid = styled.div`
@@ -248,11 +319,11 @@ const ElementsGrid = styled.div`
   
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 `
 
 const ElementCard = styled.div`
-
   border-radius: 0.75rem;
   padding: 1.25rem;
   border: 1px solid #333;
@@ -264,6 +335,14 @@ const ElementCard = styled.div`
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     border-color: #4facfe;
   }
+  
+  @media (max-width: 640px) {
+    padding: 1rem;
+    
+    p {
+      font-size: 0.95rem;
+    }
+  }
 `
 
 export default function BhaskarPage() {
@@ -272,6 +351,7 @@ export default function BhaskarPage() {
       duration: 800,
       once: true,
       easing: 'ease-out',
+      disable: window.innerWidth < 640 ? true : false, // Disable animations on very small screens
     })
   }, [])
   
@@ -293,14 +373,16 @@ export default function BhaskarPage() {
         </ProjectHeader>
         
         <HeroImage data-aos="zoom-in">
-          <Image
-            src="/images/bhaskar.png"
-            alt="Bhaskara Project Hero Image"
-            width={1200}
-            height={600}
-            className="w-full h-auto object-cover"
-            priority
-          />
+          <ResponsiveImageContainer>
+            <Image
+              src="/images/bhaskar.png"
+              alt="Bhaskara Project Hero Image"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              priority
+            />
+          </ResponsiveImageContainer>
         </HeroImage>
 
         <Section data-aos="fade-up">

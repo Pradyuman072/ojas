@@ -11,12 +11,20 @@ import "aos/dist/aos.css"
 const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 3rem 1rem;
+  
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
 `
 
 const ProjectHeader = styled.div`
   margin-bottom: 4rem;
   text-align: center;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `
 
 const ProjectTitle = styled.h1`
@@ -28,6 +36,14 @@ const ProjectTitle = styled.h1`
   margin-bottom: 1rem;
   display: inline-block;
   letter-spacing: -0.03em;
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `
 
 const ProjectSubtitle = styled.h2`
@@ -36,6 +52,11 @@ const ProjectSubtitle = styled.h2`
   font-weight: 400;
   margin-bottom: 2.5rem;
   letter-spacing: 0.05em;
+  
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
 `
 
 const HeroImage = styled.div`
@@ -44,9 +65,16 @@ const HeroImage = styled.div`
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   margin-bottom: 3rem;
   
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+  }
+  
   img {
     transform: scale(1);
     transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
   }
   
   &:hover img {
@@ -60,7 +88,12 @@ const Section = styled.section`
   flex-direction: column;
   gap: 3rem;
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 769px) {
     flex-direction: row;
     align-items: flex-start;
     
@@ -76,8 +109,16 @@ const SectionContent = styled.div`
   font-size: 1.125rem;
   flex: 3;
   
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  
   p {
     margin-bottom: 1.5rem;
+    
+    @media (max-width: 768px) {
+      margin-bottom: 1rem;
+    }
   }
 `
 
@@ -87,6 +128,16 @@ const SectionImage = styled.div`
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  @media (max-width: 768px) {
+    border-radius: 0.75rem;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   
   &:hover {
     transform: translateY(-5px);
@@ -104,10 +155,24 @@ const SectionTitle = styled.h3`
   align-items: center;
   font-weight: 600;
   
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+  
   svg {
     margin-right: 0.75rem;
     color: #43cea2;
     stroke-width: 1.5;
+    
+    @media (max-width: 480px) {
+      width: 24px;
+      height: 24px;
+    }
   }
 `
 
@@ -115,9 +180,18 @@ const List = styled.ul`
   margin-left: 1.5rem;
   margin-bottom: 2rem;
   
+  @media (max-width: 768px) {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
   li {
     margin-bottom: 0.75rem;
     position: relative;
+    
+    @media (max-width: 768px) {
+      margin-bottom: 0.5rem;
+    }
     
     &::before {
       content: "";
@@ -128,6 +202,13 @@ const List = styled.ul`
       height: 0.5rem;
       background: linear-gradient(to right, #43cea2, #185a9d);
       border-radius: 50%;
+      
+      @media (max-width: 768px) {
+        left: -1rem;
+        top: 0.6rem;
+        width: 0.4rem;
+        height: 0.4rem;
+      }
     }
   }
   
@@ -136,10 +217,19 @@ const List = styled.ul`
     margin-left: 1.5rem;
     margin-bottom: 0.5rem;
     
+    @media (max-width: 768px) {
+      margin-left: 1rem;
+    }
+    
     li::before {
       background: #a0a0a0;
       width: 0.35rem;
       height: 0.35rem;
+      
+      @media (max-width: 768px) {
+        width: 0.3rem;
+        height: 0.3rem;
+      }
     }
   }
   
@@ -159,6 +249,12 @@ const Card = styled.div`
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
   &:hover {
     transform: translateY(-5px);
   }
@@ -168,6 +264,11 @@ const Card = styled.div`
     font-size: 1.25rem;
     line-height: 1.8;
     color: #f5f5f5;
+    
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
   }
 `
 
@@ -176,6 +277,10 @@ const Divider = styled.hr`
   height: 1px;
   background: linear-gradient(to right, transparent, rgba(100, 100, 100, 0.3), transparent);
   margin: 4rem 0;
+  
+  @media (max-width: 768px) {
+    margin: 2.5rem 0;
+  }
 `
 
 export default function IllumiTracePage() {
@@ -185,8 +290,9 @@ export default function IllumiTracePage() {
       duration: 800,
       once: false,
       mirror: true,
-      offset: 100,
-      easing: 'ease-out-cubic'
+      offset: 50,
+      easing: 'ease-out-cubic',
+      disable: window.innerWidth < 768 ? 'mobile' : false // Optional: disable animations on mobile for better performance
     });
   }, []);
   
@@ -203,6 +309,8 @@ export default function IllumiTracePage() {
               width={1200}
               height={600}
               className="w-full h-auto object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
             />
           </HeroImage>
         </ProjectHeader>
@@ -244,7 +352,6 @@ export default function IllumiTracePage() {
               feedback to make the process intuitive, engaging, and educational.
             </p>
           </SectionContent>
-        
         </Section>
 
         <Divider data-aos="fade-in" />
@@ -307,7 +414,6 @@ export default function IllumiTracePage() {
               </li>
             </List>
           </SectionContent>
-         
         </Section>
 
         <Divider data-aos="fade-in" />
